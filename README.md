@@ -8,4 +8,5 @@ License
 
 GNU GPLv3. See LICENSE file.
 
-© 2017 Olivier Pieters
+© 2017 Greg Graham, derrived work from:
+    © 2017 Olivier Pieters
