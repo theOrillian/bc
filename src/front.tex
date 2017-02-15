@@ -15,11 +15,6 @@
 % load and configure tikz libraries
 \usetikzlibrary{matrix,calc,positioning}
 
-% load external font
-\setmainfont{Fira Sans}
-\setsansfont{Fira Sans}
-\setmonofont{Fira Mono}
-
 % define some lengths for internal spacing
 \newlength{\seplinewidth}    \setlength{\seplinewidth}{2cm}
 \newlength{\seplineheight}   \setlength{\seplineheight}{1pt}
@@ -69,9 +64,10 @@
     \begin{tikzpicture}
       % name
       \matrix[every node/.style={anchor=center,font=\huge},anchor=center] (name) {
-        \node{John}; \\
-        \node{Doe}; \\
-        \node{\color{jobtitlecolour}\normalsize\textit{job title}}; \\
+        \node{Greg}; \\
+        \node{Graham}; \\
+        \node{\small{}}; \\
+        \node{\color{jobtitlecolour}\large\textit{Orillian Solutions}}; \\
       };
       % sep line 1
       \node[below=\seplinedistance of name] (hl1) {};
@@ -80,10 +76,10 @@
       \matrix [below=\seplinedistance of hl1,%
                column 1/.style={anchor=center,color=iconcolour},%
                column 2/.style={anchor=west}] (contact){
-        \node{\faGlobe}; & \node{johndoe.com};\\
-        \node{\faEnvelope}; &\node{me@johndoe.com};\\
-        \node{\faPhone}; &\node{+1 781 555 1212}; \\
-        \node{\faGithub}; &\node{johndoe}; \\
+        \node{\faGithub}; &\node{theOrillian}; \\
+        \node{\faGlobe}; & \node{orillian.com};\\
+        \node{\faPhone}; &\node{515.989.1213}; \\
+        \node{\faEnvelope}; &\node{greg@orillian.com};\\
       };
       % sep line 2
       \node[below=\seplinedistance of contact] (hl2) {};
@@ -92,9 +88,7 @@
       \matrix [below=\seplinedistance of hl2,
          every node/.style={anchor=center,font=\LARGE}]
          (interests) {
-        \node{\faCode}; & \node{\faCoffee}; &
-        \node{\faLock}; & \node{\faWrench}; &
-        \node{\faCameraRetro}; \\
+        \node{\faWindows}; & \node{\faCogs}; & \node{\faDatabase}; & \node{\faLineChart}; \\
       }; 
     \end{tikzpicture}
   \end{center}
